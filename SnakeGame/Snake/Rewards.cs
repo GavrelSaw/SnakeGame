@@ -12,7 +12,7 @@ namespace Snake
     {
         List<Position> applelist;
         Board mainBoard;
-        Bitmap rewardImage = Resource1.appleReward;
+        public static Bitmap rewardImage = Resource1.appleReward;
         
 
         public Rewards(int size, Board mainBoard)
