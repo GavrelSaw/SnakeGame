@@ -17,10 +17,10 @@ namespace Snake
             InitializeComponent();
             
             //Add items to head image combo box
-            headImageCB.Items.Add("Default Snake");
+            headImageCB.Items.Add("Default");
 
             //Add items to body image combo box
-            bodyImageCB.Items.Add("Default Snake");
+            bodyImageCB.Items.Add("Default");
 
 
             //Add items to reward image combo box
@@ -37,13 +37,23 @@ namespace Snake
             {
                 Rewards.rewardImage = Resource1.appleReward;
             }
-            if(rewardImageCB.Text == "Banana")
+            else if(rewardImageCB.Text == "Banana")
             {
                 Rewards.rewardImage = Resource1.bananaReward;
             }
-            if(rewardImageCB.Text == "Cherry")
+            else if(rewardImageCB.Text == "Cherry")
             {
 
+            }
+
+            if(headImageCB.Text == "Default")
+            {
+                Snake.headImage = Resource1.defaultHead;
+            }
+
+            if(bodyImageCB.Text == "Default")
+            {
+                Snake.bodyImage = Resource1.defaultBody;
             }
             
 
