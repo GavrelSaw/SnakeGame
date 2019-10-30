@@ -143,7 +143,7 @@ namespace Snake
             endGame.Play();
             highscore.setHighscore(score);
             highscore.getScoreReport(score);
-            resetGame();
+            this.Close();
         }
         private void pauseGame()
         {
