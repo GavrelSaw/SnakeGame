@@ -44,8 +44,6 @@ namespace Snake
             clock.Interval = speed; //Set the clock to tick every 500ms
             clock.Tick += new EventHandler(refresh); //Call the refresh method at every tick to redraw the board and snake.
 
-            //setup the highscorre class
-            highscore hs = new highscore();
 
             duration = 0;
             score = 0;
@@ -141,8 +139,6 @@ namespace Snake
             isStarted = false;
             clock.Stop();
             endGame.Play();
-            highscore.setHighscore(score);
-            highscore.getScoreReport(score);
             this.Close();
         }
         private void pauseGame()
