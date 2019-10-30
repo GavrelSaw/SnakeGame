@@ -75,7 +75,6 @@ namespace Snake
 
         public int eatAppleAtPostion(Position p)
         {
-            Boolean result = false;
             Position snakeHeadPos = p;
 
             for (int i = 0; i < applelist.Count; i++)
