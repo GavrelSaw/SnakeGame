@@ -12,6 +12,7 @@ namespace Snake
     {
         //For maintaining Keyboard Keys with their corresponding states 
         private static Hashtable KeyTable = new Hashtable();
+        private static String currentDirection = "none";
 
         //For setting the Keyboard Keys with their corresponding states
         public static void ChangeState(Keys key, bool state)

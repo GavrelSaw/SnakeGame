@@ -27,7 +27,7 @@ namespace Snake
                     squares[row, col].Height = squareSize;
                     squares[row, col].Width = squareSize;
                     squares[row, col].SizeMode = PictureBoxSizeMode.StretchImage;
-                    squares[row, col].BackColor = Color.Gray;
+                    squares[row, col].BackColor = Color.DarkGray;
                     squares[row, col].BorderStyle = BorderStyle.FixedSingle;
 
                     mainForm.Controls["boardPanel"].Controls.Add(squares[row, col]);
